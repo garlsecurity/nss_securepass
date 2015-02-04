@@ -8,7 +8,7 @@ Release: 2%{?dist}
 Source0: https://github.com/garlsecurity/nss_securepass/archive/%{commit}/nss_securepass-%{commit}.tar.gz
 URL: https://github.com/garlsecurity/nss_securepass
 Group: System Environment/Base
-License: GPLv2+
+License: GPL-2.0+
 BuildRoot: %{_tmppath}/%{name}-root
 BuildRequires: libcurl-devel
 Requires: libcurl
