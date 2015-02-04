@@ -3,6 +3,8 @@ Wed Feb  4 14:09:43 UTC 2015 - deneb_alpha@opensuse.org
 
 - Fixed LICENSES files permissions
 - Fixed license identifier accordig to https://spdx.org/licenses/
+- Fixed spec name
+- Added _service file for auto download
 
 -------------------------------------------------------------------
 Wed Jan 28 2015 Giuseppe Paterno' (gpaterno@garl.ch) 0.2-2

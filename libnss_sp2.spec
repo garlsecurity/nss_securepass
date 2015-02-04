@@ -57,3 +57,26 @@ chmod 755 %{buildroot}/usr/%{_lib}/*.so*
 %post -p /sbin/ldconfig
 %postun -p /sbin/ldconfig
 
+%changelog
+-------------------------------------------------------------------
+Wed Feb  4 14:09:43 UTC 2015 - deneb_alpha@opensuse.org
+
+- Fixed LICENSES files permissions
+- Fixed license identifier accordig to https://spdx.org/licenses/
+- Fixed spec name
+- Added _service file for auto download
+
+-------------------------------------------------------------------
+Wed Jan 28 2015 Giuseppe Paterno' (gpaterno@garl.ch) 0.2-2
+
+- Fixed SPEC files for bug #1162234
+
+-------------------------------------------------------------------
+Fri Nov 14 2014 Giuseppe Paterno' (gpaterno@garl.ch) 0.2-1
+- Fixed lookup from UID
+- Changed buildroot variable to macro
+
+-------------------------------------------------------------------
+Fri Nov 7 2014 Giuseppe Paterno' (gpaterno@garl.ch) 0.1-1
+- First RPM of the SecurePass NSS module
+
