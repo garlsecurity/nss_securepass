@@ -1,13 +1,17 @@
 Summary: NSS library for SecurePass
 Name: nss-securepass
 Version: 0.5
-Release: 0%{?dist}
+Release: 2%{?dist}
 Source0: https://github.com/garlsecurity/nss_securepass/archive/v%{version}/nss_securepass-v%{version}.tar.gz
 URL: https://github.com/garlsecurity/nss_securepass
 License: GPLv2+
 BuildRequires: libcurl-devel
 BuildRequires: pam-devel
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
+
+%if 0%{?suse_version}
+Group:      System Environment/Libraries
+%endif
 
 %description
 NSS (Name Service Switch) module for SecurePass
