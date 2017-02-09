@@ -1,7 +1,7 @@
 Summary: NSS library for SecurePass
 Name: nss-securepass
-Version: 0.4
-Release: 2%{?dist}
+Version: 0.5
+Release: 0%{?dist}
 Source0: https://github.com/garlsecurity/nss_securepass/archive/v%{version}/nss_securepass-v%{version}.tar.gz
 URL: https://github.com/garlsecurity/nss_securepass
 License: GPLv2+
@@ -60,6 +60,10 @@ install -m 644 securepass.conf.template %{buildroot}/etc/securepass.conf
 %postun -p /sbin/ldconfig
 
 %changelog
+* Thu Feb 9 2017 Giuseppe Paterno' <gpaterno@gpaterno.com> 0.5-0
+- Aligned with upstream release
+- New posix groups support
+
 * Fri Sep 4 2015 Giuseppe Paterno' <gpaterno@gpaterno.com> 0.4-0
 - Aligned with upstream release
 - Fixed different lib schema between RHEL/CentOS 6 and below and 7
